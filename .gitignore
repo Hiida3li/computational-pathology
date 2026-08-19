@@ -1,0 +1,42 @@
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Data
+data/
+datasets/
+/data
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+
+# Model checkpoints / artifacts
+checkpoints/
+models/
+outputs/
+artifacts/
+
+# Cache
+.cache/
