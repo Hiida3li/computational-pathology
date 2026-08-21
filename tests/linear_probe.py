@@ -97,7 +97,6 @@ def build_encoder(name):
     raise ValueError(f"unknown model: {name}")
 
 
-# --------------------------------------------------------------------------
 
 def subsample(dataset, per_class, seed=0):
     """Take at most `per_class` images from each class. Keeps runtime sane."""
@@ -156,7 +155,7 @@ def main():
 
     # L2-normalise before the probe: standard for frozen-feature evaluation,
     # and it stops embedding-norm differences between models from confounding
-    # the comparison.
+
     Xtr = Xtr / np.linalg.norm(Xtr, axis=1, keepdims=True)
     Xte = Xte / np.linalg.norm(Xte, axis=1, keepdims=True)
 
